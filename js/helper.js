@@ -1,16 +1,16 @@
-// generate a random Number
+// Genera un numero random
 let getRandomNumber = size => {
   return Math.floor(Math.random() * size);
 }
 
-// get the Distance of two points
+// Distancia entre puntos
 let getDistance = (e, target) => {
   let diffX = e.offsetX - target.x;
   let diffY = e.offsetY - target.y;
   return Math.sqrt((diffX * diffX) + (diffY * diffY));
 }
 
-// return an String depending on the distances 
+// Devuelve un string segun la distancia 
 let getDistanceHint = distance => {
   if (distance < 30) {
     return "Te esta quemando";
